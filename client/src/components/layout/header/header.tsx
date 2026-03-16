@@ -7,11 +7,18 @@ import type { HeaderProps } from "./header.types";
 /**
  * Site header with nav and locale switcher. Semantic <header> for a11y and SEO.
  */
+/** Path without locale segment so Link + locale builds /en or /ru, not /en/ru. */
+function getPathWithoutLocale(pathname: string): string {
+  const without = pathname.replace(/^\/(en|ru)(\/|$)/, "$2") || "/";
+  return without === "" ? "/" : without;
+}
+
 export function Header({ className = "" }: HeaderProps) {
   const t = useTranslations("header");
   const tSwitcher = useTranslations("localeSwitcher");
   const locale = useLocale();
   const pathname = usePathname();
+  const pathForLocale = getPathWithoutLocale(pathname);
   const isEn = locale === "en";
   return (
     <header
@@ -43,7 +50,7 @@ export function Header({ className = "" }: HeaderProps) {
           </span>
           <div className="flex gap-2" role="group" aria-label={tSwitcher("ariaLabel")}>
             <Link
-              href={pathname}
+              href={pathForLocale}
               locale="en"
               className={`text-sm font-medium sm:text-base ${
                 isEn
@@ -54,7 +61,7 @@ export function Header({ className = "" }: HeaderProps) {
               {tSwitcher("en")}
             </Link>
             <Link
-              href={pathname}
+              href={pathForLocale}
               locale="ru"
               className={`text-sm font-medium sm:text-base ${
                 !isEn
