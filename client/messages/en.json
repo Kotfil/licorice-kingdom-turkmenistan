@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "description": "Licorice Kingdom Turkmenistan — discover licorice and natural products from Turkmenistan."
+  },
+  "header": {
+    "siteName": "Licorice Kingdom",
+    "navSection1": "Section 1",
+    "navSection2": "Section 2",
+    "ariaNav": "Main navigation"
+  },
+  "footer": {
+    "copyright": "© {year} Licorice Kingdom Turkmenistan. All rights reserved."
+  },
+  "home": {
+    "section1Title": "First block",
+    "section1Content": "This is the first centered section. Content is constrained and readable from small screens up to 4K displays.",
+    "section2Title": "Second block",
+    "section2Content": "This is the second centered section. Same responsive and semantic structure for consistency and SEO."
+  },
+  "localeSwitcher": {
+    "en": "EN",
+    "ru": "RU",
+    "ariaLabel": "Select language"
+  }
+}

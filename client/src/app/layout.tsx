@@ -1,4 +1,6 @@
-import type { Metadata, Viewport } from "next";
+import { getLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,50 +14,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  minimumScale: 1,
-  maximumScale: 5,
-};
-
-export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://licorice-kingdom-turkmenistan.example.com"
-  ),
-  title: {
-    default: "Licorice Kingdom Turkmenistan",
-    template: "%s | Licorice Kingdom Turkmenistan",
-  },
-  description:
-    "Licorice Kingdom Turkmenistan — discover licorice and natural products from Turkmenistan.",
-  keywords: ["licorice", "Turkmenistan", "natural products", "herbs"],
-  authors: [{ name: "Licorice Kingdom" }],
-  creator: "Licorice Kingdom",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: "Licorice Kingdom Turkmenistan",
-    title: "Licorice Kingdom Turkmenistan",
-    description: "Discover licorice and natural products from Turkmenistan.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col antialiased`}
       >
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

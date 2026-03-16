@@ -1,9 +1,13 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import type { FooterProps } from "./footer.types";
 
 /**
  * Site footer. Semantic <footer> for accessibility and SEO.
  */
 export function Footer({ className = "" }: FooterProps) {
+  const t = useTranslations("footer");
   const currentYear = new Date().getFullYear();
   return (
     <footer
@@ -11,7 +15,7 @@ export function Footer({ className = "" }: FooterProps) {
       role="contentinfo"
     >
       <div className="mx-auto max-w-7xl">
-        <p>© {currentYear} Licorice Kingdom Turkmenistan. All rights reserved.</p>
+        <p>{t("copyright", { year: currentYear })}</p>
       </div>
     </footer>
   );
