@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "description": "Turkmen Licorice Co. — トルクメニスタン産の甘草根および抽出物の専門輸出業者です。"
+  },
+  "header": {
+    "siteName": "Turkmen Licorice Co.",
+    "navSection1": "事業",
+    "navSection2": "製品",
+    "ariaNav": "メインナビゲーション"
+  },
+  "footer": {
+    "copyright": "© {year} Turkmen Licorice Co. All rights reserved.",
+    "contactsTitle": "連絡先",
+    "addressLabel": "住所",
+    "emailLabel": "メール",
+    "tel1Label": "電話 1",
+    "tel2Label": "電話 2",
+    "tel2Note": "(WhatsApp, IMO, Telegram)",
+    "addressValue": "25 Altyn Asyr St., Türkmenabat, Turkmenistan",
+    "emailValue": "licorice@autoproduzioni.net",
+    "tel1Value": "+993 65 868319",
+    "tel2Value": "+372 8 1119760"
+  },
+  "home": {
+    "heroKicker": "中央アジアの黄金",
+    "heroTitle": "Turkmen Licorice Co.",
+    "heroSubtitle": "根 & 抽出物",
+    "professionTitle": "私たちの事業",
+    "professionText": "当社はトルクメニスタンで生産された甘草根および甘草抽出物の専門輸出業者です。",
+    "historyTitle": "沿革",
+    "historyParagraph1": "当社は2000年代初頭、甘草の生産を専門とする国営部門 AIC「Buyan」のスタッフの一員として活動を開始しました。",
+    "historyParagraph2": "栽培・根の調達から完成品の倉庫保管まで、生産サイクル全体の各段階で知識と経験を積み重ねました。",
+    "historyParagraph3": "顧客要件を考慮しながら、部門の近代化と技術改善に参加しました。",
+    "historyParagraph4": "その後、輸出手続き一式を整備し、国際甘草ビジネスの中で自立した対外取引が可能になりました。",
+    "productsTitle": "製品",
+    "productsIntro": "当社は以下の製品を輸出しています：",
+    "productsItem1": "ベール状に圧縮した甘草根",
+    "productsItem2": "甘草抽出ペースト（半液体）",
+    "productsItem3": "スプレードライ甘草抽出粉末",
+    "productsItem4": "粗グリチルリチン酸（CGA）",
+    "qualityTitle": "品質",
+    "qualityParagraph1": "当社が供給する甘草はアムダリヤ川の氾濫原で育ち、独自の特性で世界的に知られています。",
+    "qualityParagraph2": "生産サイクルの各段階は、数十年にわたり技能を磨いてきた熟練スタッフが管理しています。",
+    "qualityParagraph3": "加工設備、研究所、校正・試験ポイントは、トルクメニスタン保健・医療産業省の専門家により厳格に監督されています。",
+    "offerTitle": "提供内容",
+    "offerItem1": "注文受付",
+    "offerItem2": "迅速な提案",
+    "offerItem3": "契約締結",
+    "offerItem4": "最新の Incoterms に基づく専門的な輸出手配",
+    "goalTitle": "目標",
+    "goalText": "上品かつ信頼できる方法で、長期的で相互に有益な協力関係を築くこと。",
+    "contactsTitle": "連絡先情報",
+    "contactsEmailLabel": "メール",
+    "contactsTel1Label": "電話 1",
+    "contactsTel2Label": "電話 2",
+    "contactsWebsiteLabel": "Webサイト",
+    "contactsMirrorLabel": "ミラー",
+    "contactsEmailValue": "licorice@autoproduzioni.net",
+    "contactsTel1Value": "+993 65 868319",
+    "contactsTel2Value": "+372 8 1119760 (WhatsApp, IMO, Telegram)",
+    "contactsWebsiteValue": "www.turkmen-licorice.online",
+    "contactsMirrorValue": "https://telegra.ph/TURKMEN-LICORICE-CO-03-03",
+    "closing": "お問い合わせをお待ちしております！"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "言語を選択"
+  }
+}
+

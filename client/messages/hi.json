@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "description": "Turkmen Licorice Co. — तुर्कमेनिस्तान में उत्पादित मुलेठी की जड़ों और अर्क का पेशेवर निर्यातक।"
+  },
+  "header": {
+    "siteName": "Turkmen Licorice Co.",
+    "navSection1": "पेशा",
+    "navSection2": "उत्पाद",
+    "ariaNav": "मुख्य नेविगेशन"
+  },
+  "footer": {
+    "copyright": "© {year} Turkmen Licorice Co. सर्वाधिकार सुरक्षित।",
+    "contactsTitle": "संपर्क",
+    "addressLabel": "पता",
+    "emailLabel": "ईमेल",
+    "tel1Label": "फोन 1",
+    "tel2Label": "फोन 2",
+    "tel2Note": "(WhatsApp, IMO, Telegram)",
+    "addressValue": "25 Altyn Asyr St., Türkmenabat, Turkmenistan",
+    "emailValue": "licorice@autoproduzioni.net",
+    "tel1Value": "+993 65 868319",
+    "tel2Value": "+372 8 1119760"
+  },
+  "home": {
+    "heroKicker": "मध्य एशिया का सोना",
+    "heroTitle": "Turkmen Licorice Co.",
+    "heroSubtitle": "जड़ें और अर्क",
+    "professionTitle": "हमारा पेशा",
+    "professionText": "हम तुर्कमेनिस्तान में उत्पादित मुलेठी की जड़ों और अर्क के पेशेवर निर्यातक हैं।",
+    "historyTitle": "हमारा इतिहास",
+    "historyParagraph1": "हमने 2000 के शुरुआती वर्षों में अपनी गतिविधि शुरू की, जब हम राज्य-स्वामित्व वाली इकाई AIC ‘Buyan’ के स्टाफ का हिस्सा थे, जो मुलेठी उत्पादन में विशेषज्ञ थी।",
+    "historyParagraph2": "धीरे-धीरे हमने पूरे उत्पादन चक्र के सभी चरणों में ज्ञान और अनुभव बढ़ाया—खेती और जड़ों की खरीद से लेकर तैयार उत्पादों के गोदाम में भंडारण तक।",
+    "historyParagraph3": "हमने ग्राहकों की आवश्यकताओं को ध्यान में रखते हुए इकाई के आधुनिकीकरण और तकनीक सुधार में भाग लिया।",
+    "historyParagraph4": "बाद में हमने पूरी निर्यात प्रक्रियाएँ विकसित कीं और अंतरराष्ट्रीय मुलेठी व्यापार के बाजार में आत्मनिर्भर विदेशी व्यापार करने में सक्षम हुए।",
+    "productsTitle": "हमारे उत्पाद",
+    "productsIntro": "हम निम्नलिखित उत्पाद निर्यात करते हैं:",
+    "productsItem1": "गाँठों (bales) में दबाई गई मुलेठी की जड़ें",
+    "productsItem2": "मुलेठी अर्क पेस्ट (अर्ध-तरल)",
+    "productsItem3": "स्प्रे-ड्राइड मुलेठी अर्क पाउडर",
+    "productsItem4": "क्रूड ग्लाइसिर्रिज़िक एसिड (CGA)",
+    "qualityTitle": "हमारे उत्पाद की गुणवत्ता",
+    "qualityParagraph1": "हमारी आपूर्ति की मुलेठी अमुदरिया नदी के बाढ़ क्षेत्र में उगाई जाती है और अपनी विशिष्ट गुणों के लिए विश्वभर में प्रसिद्ध है।",
+    "qualityParagraph2": "उत्पादन चक्र का हर चरण अनुभवी स्टाफ द्वारा नियंत्रित होता है जो दशकों से अपने कौशल को निखार रहा है।",
+    "qualityParagraph3": "प्रोसेसिंग यूनिट, प्रयोगशालाएँ, कैलिब्रेशन और परीक्षण बिंदु तुर्कमेनिस्तान के स्वास्थ्य व चिकित्सा उद्योग मंत्रालय के विशेषज्ञों द्वारा कड़ी निगरानी में रहते हैं।",
+    "offerTitle": "हम क्या प्रदान करते हैं",
+    "offerItem1": "ऑर्डर स्वीकार करना",
+    "offerItem2": "शीघ्र ऑफ़र देना",
+    "offerItem3": "अनुबंध निष्पादित करना",
+    "offerItem4": "नवीनतम Incoterms के अनुसार पेशेवर निर्यात व्यवस्था",
+    "goalTitle": "हमारा लक्ष्य",
+    "goalText": "दीर्घकालिक, पारस्परिक रूप से लाभकारी सहयोग—सुव्यवस्थित और विश्वसनीय तरीके से।",
+    "contactsTitle": "हमारे संपर्क विवरण",
+    "contactsEmailLabel": "ईमेल",
+    "contactsTel1Label": "फोन 1",
+    "contactsTel2Label": "फोन 2",
+    "contactsWebsiteLabel": "वेबसाइट",
+    "contactsMirrorLabel": "मिरर",
+    "contactsEmailValue": "licorice@autoproduzioni.net",
+    "contactsTel1Value": "+993 65 868319",
+    "contactsTel2Value": "+372 8 1119760 (WhatsApp, IMO, Telegram)",
+    "contactsWebsiteValue": "www.turkmen-licorice.online",
+    "contactsMirrorValue": "https://telegra.ph/TURKMEN-LICORICE-CO-03-03",
+    "closing": "आपकी पूछताछ का हार्दिक स्वागत है!"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "भाषा चुनें"
+  }
+}
+

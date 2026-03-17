@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "description": "Turkmen Licorice Co. — Turkmenistanissa tuotettujen lakritsijuuren ja -uutteiden ammattimainen viejä."
+  },
+  "header": {
+    "siteName": "Turkmen Licorice Co.",
+    "navSection1": "Ammatti",
+    "navSection2": "Tuotteet",
+    "ariaNav": "Päänavigointi"
+  },
+  "footer": {
+    "copyright": "© {year} Turkmen Licorice Co. Kaikki oikeudet pidätetään.",
+    "contactsTitle": "Yhteystiedot",
+    "addressLabel": "Osoite",
+    "emailLabel": "Sähköposti",
+    "tel1Label": "Puh. 1",
+    "tel2Label": "Puh. 2",
+    "tel2Note": "(WhatsApp, IMO, Telegram)",
+    "addressValue": "25 Altyn Asyr St., Türkmenabat, Turkmenistan",
+    "emailValue": "licorice@autoproduzioni.net",
+    "tel1Value": "+993 65 868319",
+    "tel2Value": "+372 8 1119760"
+  },
+  "home": {
+    "heroKicker": "Keski-Aasian kulta",
+    "heroTitle": "Turkmen Licorice Co.",
+    "heroSubtitle": "Juuret & Uutteet",
+    "professionTitle": "Ammattimme",
+    "professionText": "Olemme Turkmenistanissa tuotettujen lakritsijuuren ja -uutteiden ammattimainen viejä.",
+    "historyTitle": "Historiamme",
+    "historyParagraph1": "Aloitimme toimintamme 2000-luvun alussa osana valtion omistaman AIC “Buyan” -yksikön henkilöstöä, joka on erikoistunut lakritsin tuotantoon.",
+    "historyParagraph2": "Askel askeleelta kartutimme tietoa ja kokemusta koko tuotantosyklin kaikissa vaiheissa: viljelystä ja juurten hankinnasta valmiiden tuotteiden varastointiin.",
+    "historyParagraph3": "Osallistuimme yksikön modernisointiin ja teknologian kehittämiseen asiakkaiden vaatimukset huomioiden.",
+    "historyParagraph4": "Myöhemmin kehitimme kokonaiset vientiprosessit ja kykenimme itsenäiseen ulkomaankauppaan kansainvälisessä lakritsiliiketoiminnassa.",
+    "productsTitle": "Tuotteemme",
+    "productsIntro": "Viemme seuraavia tuotteita:",
+    "productsItem1": "Paaleihin puristetut lakritsijuuret",
+    "productsItem2": "Lakritsiuutepasta (puolineste)",
+    "productsItem3": "Lakritsiuutepulveri (suihkukuivattu)",
+    "productsItem4": "Raaka glysyrritsiinihappo (CGA)",
+    "qualityTitle": "Tuotteidemme laatu",
+    "qualityParagraph1": "Toimittamamme lakritsi kasvaa Amudarja-joen tulvatasangolla ja on tunnettu maailmanlaajuisesti ainutlaatuisista ominaisuuksistaan.",
+    "qualityParagraph2": "Jokainen tuotantosyklin vaihe on kokeneen henkilöstön valvonnassa, joka on hionut taitojaan vuosikymmenien ajan.",
+    "qualityParagraph3": "Jalostusyksiköt, laboratoriot sekä kalibrointi- ja testauspisteet ovat tiukasti Turkmenistanin terveys- ja lääketeollisuusministeriön asiantuntijoiden valvonnassa.",
+    "offerTitle": "Mitä tarjoamme",
+    "offerItem1": "Tilausten vastaanotto",
+    "offerItem2": "Nopeat tarjoukset",
+    "offerItem3": "Sopimusten tekeminen",
+    "offerItem4": "Ammattimaiset vientijärjestelyt uusimpien Incoterms-ehtojen mukaisesti",
+    "goalTitle": "Tavoitteemme",
+    "goalText": "Pitkäaikainen, molempia hyödyttävä yhteistyö tyylikkäällä ja luotettavalla tavalla.",
+    "contactsTitle": "Yhteystiedot",
+    "contactsEmailLabel": "Sähköposti",
+    "contactsTel1Label": "Puh. 1",
+    "contactsTel2Label": "Puh. 2",
+    "contactsWebsiteLabel": "Verkkosivusto",
+    "contactsMirrorLabel": "Peili",
+    "contactsEmailValue": "licorice@autoproduzioni.net",
+    "contactsTel1Value": "+993 65 868319",
+    "contactsTel2Value": "+372 8 1119760 (WhatsApp, IMO, Telegram)",
+    "contactsWebsiteValue": "www.turkmen-licorice.online",
+    "contactsMirrorValue": "https://telegra.ph/TURKMEN-LICORICE-CO-03-03",
+    "closing": "Tiedustelut ovat lämpimästi tervetulleita!"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "Valitse kieli"
+  }
+}
+

@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "description": "Turkmen Licorice Co. — 투르크메니스탄에서 생산된 감초 뿌리와 추출물의 전문 수출업체입니다."
+  },
+  "header": {
+    "siteName": "Turkmen Licorice Co.",
+    "navSection1": "전문 분야",
+    "navSection2": "제품",
+    "ariaNav": "주요 내비게이션"
+  },
+  "footer": {
+    "copyright": "© {year} Turkmen Licorice Co. All rights reserved.",
+    "contactsTitle": "연락처",
+    "addressLabel": "주소",
+    "emailLabel": "이메일",
+    "tel1Label": "전화 1",
+    "tel2Label": "전화 2",
+    "tel2Note": "(WhatsApp, IMO, Telegram)",
+    "addressValue": "25 Altyn Asyr St., Türkmenabat, Turkmenistan",
+    "emailValue": "licorice@autoproduzioni.net",
+    "tel1Value": "+993 65 868319",
+    "tel2Value": "+372 8 1119760"
+  },
+  "home": {
+    "heroKicker": "중앙아시아의 황금",
+    "heroTitle": "Turkmen Licorice Co.",
+    "heroSubtitle": "뿌리 & 추출물",
+    "professionTitle": "우리의 전문 분야",
+    "professionText": "우리는 투르크메니스탄에서 생산된 감초 뿌리와 추출물을 전문적으로 수출합니다.",
+    "historyTitle": "회사 연혁",
+    "historyParagraph1": "우리는 2000년대 초, 감초 생산을 전문으로 하는 국영 부문 AIC ‘Buyan’의 구성원으로서 활동을 시작했습니다.",
+    "historyParagraph2": "재배 및 뿌리 조달부터 창고 보관까지, 생산 사이클 전 과정에서 지식과 경험을 단계적으로 축적했습니다.",
+    "historyParagraph3": "고객 요구를 고려하여 설비 현대화와 기술 개선에 참여했습니다.",
+    "historyParagraph4": "이후 수출 절차 전반을 정립했고, 국제 감초 비즈니스에서 독자적으로 대외무역을 수행할 수 있게 되었습니다.",
+    "productsTitle": "제품",
+    "productsIntro": "우리는 다음 제품을 수출합니다:",
+    "productsItem1": "베일 형태로 압축된 감초 뿌리",
+    "productsItem2": "감초 추출 페이스트(반액상)",
+    "productsItem3": "스프레이 드라이 감초 추출 분말",
+    "productsItem4": "조(粗) 글리시리진산(CGA)",
+    "qualityTitle": "품질",
+    "qualityParagraph1": "당사가 공급하는 감초는 아무다리아 강 범람원에서 재배되며, 독특한 특성으로 전 세계적으로 잘 알려져 있습니다.",
+    "qualityParagraph2": "생산 주기의 모든 단계는 수십 년간 숙련된 인력이 엄격히 관리합니다.",
+    "qualityParagraph3": "가공 설비, 실험실, 교정 및 테스트 포인트는 투르크메니스탄 보건·의료산업부 전문가들의 감독을 받습니다.",
+    "offerTitle": "제공 서비스",
+    "offerItem1": "주문 접수",
+    "offerItem2": "신속한 제안",
+    "offerItem3": "계약 체결",
+    "offerItem4": "최신 Incoterms에 따른 전문 수출 진행",
+    "goalTitle": "목표",
+    "goalText": "우아하고 신뢰할 수 있는 방식으로 장기적이고 상호 이익이 되는 협력을 추구합니다.",
+    "contactsTitle": "연락처",
+    "contactsEmailLabel": "이메일",
+    "contactsTel1Label": "전화 1",
+    "contactsTel2Label": "전화 2",
+    "contactsWebsiteLabel": "웹사이트",
+    "contactsMirrorLabel": "미러",
+    "contactsEmailValue": "licorice@autoproduzioni.net",
+    "contactsTel1Value": "+993 65 868319",
+    "contactsTel2Value": "+372 8 1119760 (WhatsApp, IMO, Telegram)",
+    "contactsWebsiteValue": "www.turkmen-licorice.online",
+    "contactsMirrorValue": "https://telegra.ph/TURKMEN-LICORICE-CO-03-03",
+    "closing": "문의는 언제든지 환영합니다!"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "언어 선택"
+  }
+}
+

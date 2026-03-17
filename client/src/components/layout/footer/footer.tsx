@@ -15,7 +15,48 @@ export function Footer({ className = "" }: FooterProps) {
       role="contentinfo"
     >
       <div className="mx-auto max-w-7xl">
-        <p>{t("copyright", { year: currentYear })}</p>
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row md:items-start md:text-left">
+          <div>
+            <p>{t("copyright", { year: currentYear })}</p>
+          </div>
+          <div className="max-w-xl">
+            <p className="mb-3 font-semibold text-foreground">{t("contactsTitle")}</p>
+            <ul className="space-y-1">
+              <li>
+                <span className="font-medium text-foreground">{t("addressLabel")}:</span>{" "}
+                <span>{t("addressValue")}</span>
+              </li>
+              <li>
+                <span className="font-medium text-foreground">{t("emailLabel")}:</span>{" "}
+                <a
+                  className="underline underline-offset-4 hover:text-foreground"
+                  href={`mailto:${t("emailValue")}`}
+                >
+                  {t("emailValue")}
+                </a>
+              </li>
+              <li>
+                <span className="font-medium text-foreground">{t("tel1Label")}:</span>{" "}
+                <a
+                  className="underline underline-offset-4 hover:text-foreground"
+                  href={`tel:${t("tel1Value")}`}
+                >
+                  {t("tel1Value")}
+                </a>
+              </li>
+              <li>
+                <span className="font-medium text-foreground">{t("tel2Label")}:</span>{" "}
+                <a
+                  className="underline underline-offset-4 hover:text-foreground"
+                  href={`tel:${t("tel2Value")}`}
+                >
+                  {t("tel2Value")}
+                </a>{" "}
+                <span className="text-zinc-500 dark:text-zinc-400">{t("tel2Note")}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   );
