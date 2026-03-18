@@ -15,7 +15,6 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("home");
   const tel2Value = t("contactsTel2Value");
-  const tel2Href = tel2Value.replace(/\s*\(.*\)$/, "");
   return (
     <>
       <Header />
@@ -70,64 +69,8 @@ export default async function HomePage({ params }: Props) {
           </ul>
         </CenteredSection>
 
-        <CenteredSection id="goal" title={t("goalTitle")}>
-          <p>{t("goalText")}</p>
-        </CenteredSection>
 
-        <CenteredSection id="contacts" title={t("contactsTitle")}>
-          <ul className="space-y-1">
-            <li>
-              <span className="font-medium text-foreground">{t("contactsEmailLabel")}:</span>{" "}
-              <a
-                className="underline underline-offset-4 hover:text-foreground"
-                href={`mailto:${t("contactsEmailValue")}`}
-              >
-                {t("contactsEmailValue")}
-              </a>
-            </li>
-            <li>
-              <span className="font-medium text-foreground">{t("contactsTel1Label")}:</span>{" "}
-              <a
-                className="underline underline-offset-4 hover:text-foreground"
-                href={`tel:${t("contactsTel1Value")}`}
-              >
-                {t("contactsTel1Value")}
-              </a>
-            </li>
-            <li>
-              <span className="font-medium text-foreground">{t("contactsTel2Label")}:</span>{" "}
-              <a
-                className="underline underline-offset-4 hover:text-foreground"
-                href={`tel:${tel2Href}`}
-              >
-                {tel2Value}
-              </a>
-            </li>
-            <li>
-              <span className="font-medium text-foreground">{t("contactsWebsiteLabel")}:</span>{" "}
-              <a
-                className="underline underline-offset-4 hover:text-foreground"
-                href={`https://${t("contactsWebsiteValue")}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("contactsWebsiteValue")}
-              </a>
-            </li>
-            <li>
-              <span className="font-medium text-foreground">{t("contactsMirrorLabel")}:</span>{" "}
-              <a
-                className="underline underline-offset-4 hover:text-foreground"
-                href={t("contactsMirrorValue")}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("contactsMirrorValue")}
-              </a>
-            </li>
-          </ul>
-          <p className="mt-6 font-medium text-foreground">{t("closing")}</p>
-        </CenteredSection>
+    
       </main>
       <Footer />
     </>

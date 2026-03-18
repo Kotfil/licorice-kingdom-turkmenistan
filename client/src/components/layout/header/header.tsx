@@ -1,8 +1,17 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { locales } from "@/i18n/locales";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import type { HeaderProps } from "./header.types";
 
 /**
@@ -23,9 +32,14 @@ export function Header({ className = "" }: HeaderProps) {
   const t = useTranslations("header");
   const tSwitcher = useTranslations("localeSwitcher");
   const locale = useLocale();
+  const params = useParams<{ locale?: string }>();
   const pathname = usePathname();
+  const router = useRouter();
   const pathForLocale = getPathWithoutLocale(pathname);
-  const activeLocale = locale as (typeof locales)[number];
+  const localeFromUrl = params?.locale;
+  const activeLocale = (locales.includes(localeFromUrl as never)
+    ? (localeFromUrl as (typeof locales)[number])
+    : (locale as (typeof locales)[number]));
 
   const localeOptions: Array<{ value: (typeof locales)[number]; label: string }> =
     [
@@ -50,41 +64,33 @@ export function Header({ className = "" }: HeaderProps) {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
         <Link
           href="/"
+          locale={activeLocale}
           className="text-lg font-semibold text-foreground sm:text-xl"
         >
           {t("siteName")}
         </Link>
         <nav aria-label={t("ariaNav")} className="flex items-center gap-4 sm:gap-6">
-          <Link
-            href="#profession"
-            className="text-sm text-zinc-600 hover:text-foreground dark:text-zinc-400 dark:hover:text-zinc-100 sm:text-base"
-          >
-            {t("navSection1")}
-          </Link>
-          <Link
-            href="#products"
-            className="text-sm text-zinc-600 hover:text-foreground dark:text-zinc-400 dark:hover:text-zinc-100 sm:text-base"
-          >
-            {t("navSection2")}
-          </Link>
-          <span className="text-zinc-400 dark:text-zinc-500" aria-hidden>
-            |
-          </span>
-          <div className="flex flex-wrap items-center justify-end gap-2" role="group" aria-label={tSwitcher("ariaLabel")}>
-            {localeOptions.map((option) => (
-              <Link
-                key={option.value}
-                href={pathForLocale}
-                locale={option.value}
-                className={`text-sm font-medium sm:text-base ${
-                  activeLocale === option.value
-                    ? "text-foreground underline"
-                    : "text-zinc-500 hover:text-foreground dark:text-zinc-400 dark:hover:text-zinc-100"
-                }`}
-              >
-                {option.label}
-              </Link>
-            ))}
+          <div className="w-[112px]" aria-label={tSwitcher("ariaLabel")}>
+            <Select
+              value={activeLocale}
+              onValueChange={(nextLocale) => {
+                if (nextLocale === activeLocale) return;
+                router.push(pathForLocale, { locale: nextLocale as (typeof locales)[number] });
+              }}
+            >
+              <SelectTrigger aria-label={tSwitcher("ariaLabel")} className="h-8 px-2 text-xs sm:h-9 sm:px-3 sm:text-sm">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent position="popper">
+                <SelectGroup>
+                  {localeOptions.map((option) => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {option.label}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
           </div>
         </nav>
       </div>
