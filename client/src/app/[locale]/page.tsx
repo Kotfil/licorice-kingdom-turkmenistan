@@ -20,7 +20,7 @@ export default async function HomePage({ params }: Props) {
       <Header />
       <main
         id="main-content"
-        className="flex-1 bg-[url('/backbround.jpeg')] bg-repeat bg-[length:220px_220px] sm:bg-[length:260px_260px] lg:bg-[length:320px_320px] 2xl:bg-[length:380px_380px]"
+        className="flex-1 bg-[url('/backbround.jpeg')] bg-repeat bg-[length:110px_110px] sm:bg-[length:130px_130px] lg:bg-[length:160px_160px] 2xl:bg-[length:190px_190px]"
         role="main"
       >
         <section className="w-full px-4 py-12 sm:px-6 sm:py-16 md:px-8 lg:px-10 xl:px-12 2xl:mx-auto 2xl:max-w-[2560px]">
