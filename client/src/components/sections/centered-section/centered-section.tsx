@@ -22,7 +22,7 @@ export function CenteredSection({
         >
           {title}
         </h2>
-        <div className="text-zinc-900 dark:text-zinc-300 text-[33px] sm:text-[39px] md:text-[45px] [&_p]:mb-4 [&_p:last-child]:mb-0">
+        <div className="text-zinc-900 dark:text-zinc-300 text-[15px] sm:text-[18px] md:text-[20px] [&_p]:mb-4 [&_p:last-child]:mb-0">
           {children}
         </div>
       </div>

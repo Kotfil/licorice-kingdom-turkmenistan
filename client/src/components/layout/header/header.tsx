@@ -32,7 +32,6 @@ function getPathWithoutLocale(pathname: string): string {
 export function Header({ className = "" }: HeaderProps) {
   const t = useTranslations("header");
   const tSwitcher = useTranslations("localeSwitcher");
-  const tFooter = useTranslations("footer");
   const locale = useLocale();
   const params = useParams<{ locale?: string }>();
   const pathname = usePathname();
@@ -83,18 +82,13 @@ export function Header({ className = "" }: HeaderProps) {
       role="banner"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-        <div className="flex flex-col">
-          <Link
-            href="/"
-            locale={activeLocale}
-            className="text-lg font-semibold text-foreground sm:text-xl"
-          >
-            {t("siteName")}
-          </Link>
-          <p className="mt-0.5 max-w-xs text-xs text-zinc-600 dark:text-zinc-400 sm:max-w-sm">
-            {tFooter("addressValue")}
-          </p>
-        </div>
+        <Link
+          href="/"
+          locale={activeLocale}
+          className="text-lg font-semibold text-foreground sm:text-xl"
+        >
+          {t("siteName")}
+        </Link>
         <nav aria-label={t("ariaNav")} className="flex items-center gap-4 sm:gap-6">
           <div className="w-[112px]" aria-label={tSwitcher("ariaLabel")}>
             <Select
