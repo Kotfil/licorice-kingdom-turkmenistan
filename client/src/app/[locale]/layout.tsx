@@ -20,29 +20,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ??
     "https://licorice-kingdom-turkmenistan.example.com";
-  const isEn = locale === "en";
   const description = messages.metadata.description;
   return {
     metadataBase: new URL(baseUrl),
     title: {
-      default: isEn
-        ? "Licorice Kingdom Turkmenistan"
-        : "Царство солодки Туркменистан",
-      template: isEn ? "%s | Licorice Kingdom" : "%s | Царство солодки",
+      default: "Turkmen Licorice Co.",
+      template: "%s | Turkmen Licorice Co.",
     },
     description,
-    keywords: isEn
-      ? ["licorice", "Turkmenistan", "natural products", "herbs"]
-      : ["солодка", "Туркменистан", "натуральные продукты", "травы"],
     openGraph: {
       type: "website",
       locale: locale === "ru" ? "ru_RU" : "en_US",
-      siteName: isEn
-        ? "Licorice Kingdom Turkmenistan"
-        : "Царство солодки Туркменистан",
-      title: isEn
-        ? "Licorice Kingdom Turkmenistan"
-        : "Царство солодки Туркменистан",
+      siteName: "Turkmen Licorice Co.",
+      title: "Turkmen Licorice Co.",
       description,
     },
     robots: { index: true, follow: true },
@@ -57,9 +47,12 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const messages = await getMessages();
+  const isRtl = locale === "ar";
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
+      <div dir={isRtl ? "rtl" : "ltr"} className={isRtl ? "text-right" : ""}>
+        {children}
+      </div>
     </NextIntlClientProvider>
   );
 }

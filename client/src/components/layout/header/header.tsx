@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { locales } from "@/i18n/locales";
@@ -31,6 +32,7 @@ function getPathWithoutLocale(pathname: string): string {
 export function Header({ className = "" }: HeaderProps) {
   const t = useTranslations("header");
   const tSwitcher = useTranslations("localeSwitcher");
+  const tFooter = useTranslations("footer");
   const locale = useLocale();
   const params = useParams<{ locale?: string }>();
   const pathname = usePathname();
@@ -44,17 +46,36 @@ export function Header({ className = "" }: HeaderProps) {
   const localeOptions: Array<{ value: (typeof locales)[number]; label: string }> =
     [
       { value: "en", label: "EN" },
-      { value: "ru", label: "RU" },
+      { value: "zh", label: "CN" },
       { value: "fr", label: "FR" },
-      { value: "sv", label: "SV" },
-      { value: "zh", label: "中文" },
+      { value: "it", label: "IT" },
       { value: "ar", label: "AR" },
+      { value: "nl", label: "NL" },
+      { value: "ja", label: "JP" },
       { value: "hi", label: "HI" },
       { value: "ko", label: "KO" },
-      { value: "ja", label: "JA" },
-      { value: "it", label: "IT" },
+      { value: "sv", label: "SV" },
+      { value: "ru", label: "RU" },
       { value: "fi", label: "FI" },
-      { value: "nl", label: "NL" }
+      ...locales
+        .filter(
+          (l) =>
+            ![
+              "en",
+              "zh",
+              "fr",
+              "it",
+              "ar",
+              "nl",
+              "ja",
+              "hi",
+              "ko",
+              "sv",
+              "ru",
+              "fi",
+            ].includes(l)
+        )
+        .map((l) => ({ value: l, label: l.toUpperCase() })),
     ];
   return (
     <header
@@ -62,13 +83,18 @@ export function Header({ className = "" }: HeaderProps) {
       role="banner"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-        <Link
-          href="/"
-          locale={activeLocale}
-          className="text-lg font-semibold text-foreground sm:text-xl"
-        >
-          {t("siteName")}
-        </Link>
+        <div className="flex flex-col">
+          <Link
+            href="/"
+            locale={activeLocale}
+            className="text-lg font-semibold text-foreground sm:text-xl"
+          >
+            {t("siteName")}
+          </Link>
+          <p className="mt-0.5 max-w-xs text-xs text-zinc-600 dark:text-zinc-400 sm:max-w-sm">
+            {tFooter("addressValue")}
+          </p>
+        </div>
         <nav aria-label={t("ariaNav")} className="flex items-center gap-4 sm:gap-6">
           <div className="w-[112px]" aria-label={tSwitcher("ariaLabel")}>
             <Select
@@ -92,6 +118,13 @@ export function Header({ className = "" }: HeaderProps) {
               </SelectContent>
             </Select>
           </div>
+          <Image
+            src="/logo.webp"
+            width={80}
+            height={80}
+            alt={t("siteName")}
+            className="h-10 w-10 rounded-sm object-contain sm:h-12 sm:w-12 lg:h-16 lg:w-16"
+          />
         </nav>
       </div>
     </header>

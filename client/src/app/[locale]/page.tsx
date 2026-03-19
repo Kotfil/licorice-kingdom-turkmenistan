@@ -18,16 +18,20 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <Header />
-      <main id="main-content" className="flex-1" role="main">
+      <main
+        id="main-content"
+        className="flex-1 bg-[url('/backbround.jpeg')] bg-repeat bg-[length:220px_220px] sm:bg-[length:260px_260px] lg:bg-[length:320px_320px] 2xl:bg-[length:380px_380px]"
+        role="main"
+      >
         <section className="w-full px-4 py-12 sm:px-6 sm:py-16 md:px-8 lg:px-10 xl:px-12 2xl:mx-auto 2xl:max-w-[2560px]">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 sm:text-base">
+            <p className="text-sm font-semibold uppercase tracking-widest text-zinc-800 dark:text-zinc-800 sm:text-base">
               {t("heroKicker")}
             </p>
-            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-900 sm:text-4xl md:text-5xl">
               {t("heroTitle")}
             </h1>
-            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400 sm:text-xl">
+            <p className="mt-4 text-lg text-zinc-900 dark:text-zinc-900 sm:text-xl">
               {t("heroSubtitle")}
             </p>
           </div>
