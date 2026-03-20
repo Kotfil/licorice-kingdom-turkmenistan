@@ -81,16 +81,19 @@ export function Header({ className = "" }: HeaderProps) {
       className={`w-full border-b border-zinc-200 bg-background px-4 py-3 sm:px-6 sm:py-4 md:px-8 lg:px-10 xl:px-12 2xl:max-w-[2560px] 2xl:mx-auto dark:border-zinc-800 ${className}`}
       role="banner"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+      <div className="mx-auto flex min-w-0 max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
         <Link
           href="/"
           locale={activeLocale}
-          className="text-lg font-semibold text-foreground sm:text-xl"
+          className="block w-full text-center text-lg font-semibold leading-snug text-foreground sm:w-auto sm:shrink-0 sm:text-start sm:text-xl"
         >
           {t("siteName")}
         </Link>
-        <nav aria-label={t("ariaNav")} className="flex items-center gap-4 sm:gap-6">
-          <div className="w-[112px]" aria-label={tSwitcher("ariaLabel")}>
+        <nav
+          aria-label={t("ariaNav")}
+          className="flex w-full shrink-0 items-center justify-between gap-3 sm:w-auto sm:justify-end sm:gap-4 md:gap-6"
+        >
+          <div className="w-[88px] sm:w-[112px]" aria-label={tSwitcher("ariaLabel")}>
             <Select
               value={activeLocale}
               onValueChange={(nextLocale) => {
